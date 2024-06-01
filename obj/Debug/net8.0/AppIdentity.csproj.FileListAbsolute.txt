@@ -38,3 +38,7 @@
 /home/nyake/work_space/leave_manager/AppIdentity/obj/Debug/net8.0/AppIdentity.csproj.AssemblyReference.cache
 /home/nyake/work_space/leave_manager/AppIdentity/obj/Debug/net8.0/AppIdentity.csproj.CopyComplete
 /home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/keys/is-signing-key-003CC2AF463DC57A7259CBB26FB5C5FB.json
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/AppIdentity.staticwebassets.runtime.json
+/home/nyake/work_space/leave_manager/AppIdentity/obj/Debug/net8.0/AppIdentity.RazorAssemblyInfo.cache
+/home/nyake/work_space/leave_manager/AppIdentity/obj/Debug/net8.0/AppIdentity.RazorAssemblyInfo.cs
+/home/nyake/work_space/leave_manager/AppIdentity/obj/Debug/net8.0/AppIdentity.sourcelink.json

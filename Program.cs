@@ -4,6 +4,8 @@ using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Test;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddRazorPages();
+
 // Identity server config
 builder.Services.AddIdentityServer(options =>{
     options.Events.RaiseErrorEvents = true;
@@ -22,6 +24,9 @@ builder.Services.AddIdentityServer(options =>{
 var app = builder.Build();
 
 app.UseIdentityServer();
-app.MapGet("/", () => "Good evening");
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+app.MapRazorPages().RequireAuthorization();
 
 app.Run();
