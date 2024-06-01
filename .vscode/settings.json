@@ -1,0 +1,8 @@
+{
+    "editor.wordWrap": "on",
+    "files.exclude": {
+        "**/obj": true,
+        "**/bin":true
+    },
+    "editor.fontSize": 12
+}
