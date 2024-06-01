@@ -2,8 +2,13 @@ using AppIdentity;
 using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Test;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+var connectionString = configuration.GetConnectionString("DefaultConnection");
+var migrationAssembly  = typeof(InMemoryConfig).Assembly.GetName().Name;
+
 builder.Services.AddRazorPages();
 
 // Identity server config
@@ -15,11 +20,11 @@ builder.Services.AddIdentityServer(options =>{
     options.EmitStaticAudienceClaim = true;
 
 })
-.AddTestUsers(InMemoryConfig.Users)
-.AddInMemoryClients(InMemoryConfig.Clients)
-.AddInMemoryApiResources(InMemoryConfig.ApiResources)
-.AddInMemoryApiScopes(InMemoryConfig.ApiScopes)
-.AddInMemoryIdentityResources(InMemoryConfig.IdentityResources);
+.AddConfigurationStore(options => options.ConfigureDbContext = b => b.UseSqlite(connectionString, opt => opt.MigrationsAssembly(migrationAssembly)))
+.AddOperationalStore(options => options.ConfigureDbContext = b => b.UseSqlite(connectionString, opt => opt.MigrationsAssembly(migrationAssembly)))
+.AddTestUsers(InMemoryConfig.Users);
+
+
 
 var app = builder.Build();
 
