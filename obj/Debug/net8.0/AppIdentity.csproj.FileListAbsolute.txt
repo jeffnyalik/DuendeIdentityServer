@@ -139,3 +139,14 @@
 /home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Duende.IdentityServer.AspNetIdentity.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.AspNetCore.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Extensions.Hosting.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Extensions.Logging.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Formatting.Compact.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Settings.Configuration.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Sinks.Console.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
+/home/nyake/work_space/leave_manager/AppIdentity/bin/Debug/net8.0/Serilog.Sinks.File.dll

@@ -89,6 +89,12 @@ namespace AppIdentity
           Scopes = new List<string> {"weatherapi.read", "weatherapi.write"},
           ApiSecrets = new List<Secret> {new Secret("ScopeSecret".Sha256())},
           UserClaims = new List<string> {"role"}
+        },
+
+        new ApiResource("paymentapi")
+        {
+          Scopes = new List<string>{"paymentapi.read", "paymentapi.write"},
+          ApiSecrets = new List<Secret>{ new Secret("PaySecret".Sha256())}
         }
         };
 
@@ -137,6 +143,8 @@ namespace AppIdentity
           ClientSecrets = { new Secret("BankPassword".Sha256()) },
           AllowedScopes = {"customerapi.read", "customerapi.write"}
         },
+
+
 
         // interactive client using code flow + pkce
         new Client
